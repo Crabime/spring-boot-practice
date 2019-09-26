@@ -12,4 +12,8 @@ import java.util.List;
 public interface PGeneService {
 
     List<PGene> findGeneBySpecies(@Param("species") String species, @Param("pageNo") int pageNo, @Param("pageSize") int pageSize);
+
+    PGene findGeneById(@Param("geneId") String geneId);
+
+    void insertGene(PGene gene);
 }

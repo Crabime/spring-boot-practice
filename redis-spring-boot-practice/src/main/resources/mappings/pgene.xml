@@ -14,4 +14,12 @@
         select * from gene_pig where species = #{species} limit #{pageNo}, #{pageSize}
     </select>
 
+    <select id="findGeneById" resultType="cn.crabime.redis.rwsep.beans.PGene">
+        select * from gene_pig where gene_id = #{geneId}
+    </select>
+
+    <insert id="insertGene" parameterType="cn.crabime.redis.rwsep.beans.PGene">
+        insert into gene_pig(gene_id, gene_name, gene_type, locus, length, species, description)
+            value(#{geneId}, #{geneName}, #{geneType}, #{locus}, #{length}, #{species}, #{description})
+    </insert>
 </mapper>
