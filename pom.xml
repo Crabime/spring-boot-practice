@@ -12,6 +12,7 @@
         <module>oauth2-spring-boot-practice</module>
         <module>redis-spring-boot-practice</module>
         <module>simple-spring-boot-practice</module>
+        <module>spring-cloud</module>
     </modules>
 
     <parent>
